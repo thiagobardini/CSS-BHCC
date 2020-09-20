@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/custom.css">
+  <title>Week 2 - Four Seasons Of The Year</title>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <div id="top-header"> 
+        <h1>Four Seasons Of The Year</h1>
+        <h2>Florianópolis - Brazil</h2>
+      </div>
+    </header>
+    <nav>
+      <div id="holder-nav">
+        <div id="nav-img">
+          <img id="icone" src="images/seasons.png">
+        </div>  
+        <div id="navigation">
+          <ul>
+            <li onmousemove="mudaFoto('images/winter.png')" onmouseout="mudaFoto('images/seasons.png')"><a href="index.htm#winter"><a href="index.htm#winter">Winter</a></li>
+            <li onmousemove="mudaFoto('images/spring.png')" onmouseout="mudaFoto('images/seasons.png')"><a href="index.htm#spring">Spring</a></li>
+            <li onmousemove="mudaFoto('images/summer.png')" onmouseout="mudaFoto('images/seasons.png')"><a href="index.htm#summer">Summer</a></li>
+            <li onmousemove="mudaFoto('images/fall.png')" onmouseout="mudaFoto('images/seasons.png')"><a href="index.htm#fall">Fall</a></li>
+          </ul>
+        </div> 
+      </div>    
+    </nav>
+    <div id="section-center">https://github.com/thiagobardini/CSS3-BHCC.git
+      <section id="winter" onmousemove="mudaFoto('images/winter.png')" onmouseout="mudaFoto('images/seasons.png')">
+        <h1>Winter</h1>
+        <p>In Florianópolis, the average temperature is around 32ºF on the coldest days in the winter. Because it is an island, the traffic is quieter, so it is easier to enjoy many parts of the city, compared to the busiest seasons.</p>
+      </section>
+                  
+      <section id="spring" onmousemove="mudaFoto('images/spring.png')" onmouseout="mudaFoto('images/seasons.png')">
+        <h1>Spring</h1>
+        <p>Spring arrives having the warmest weather, the perfect climate for walking, and going to the beach. This season makes us feel more free. The streets get busier, people look for where to go and the feeling of wanting to enjoy the outdoors.</p>
+      </section>
+
+      <section id="summer" onmousemove="mudaFoto('images/summer.png')" onmouseout="mudaFoto('images/seasons.png')">
+        <h1>Summer</h1>
+        <p>In summer, temperatures during the day remain between 82ºF and 93ºF. It is when the island is always full of people, many events, and a great time to enjoy the beach with friends and practice surfing or swimming.</p>
+      </section>
+        
+      <section id="fall" onmousemove="mudaFoto('images/fall.png')" onmouseout="mudaFoto('images/seasons.png')"> 
+        <h1>Fall</h1>
+        <p>One of the biggest advantages of visiting Florianópolis in autumn is the pleasant climate of the region at this time of year. It is the best time to visit. Despite the morning chill, temperatures during the day remain between 64ºF and 78ºF, which is ideal for those who want to have fun outdoors without running the risk of being very cold or suffering from hot temperatures.</p>
+      </section>
+      
+    </div>
+    
+    <footer>
+      <div id="copyright">
+        <p>Copyright &copy; 2020 - by Thiago Bardini</p>
+      </div>  
+    </footer>  
+  </div> <!--End container-->
+
+  <script>
+    function mudaFoto (foto) {
+      document.getElementById("icone").src = foto;
+    }
+  </script>
+
+</body>
+</html>
