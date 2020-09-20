@@ -1,5 +1,4 @@
 # CSS3-BHCC
-2020FA CMT-125-WB
 
 ## BHCC - Information Technology - CMT 125 Cascading Style Sheets - Fall 2020
 
