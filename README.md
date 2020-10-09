@@ -24,31 +24,30 @@
 ![Imgur](https://i.imgur.com/v0F6XLw.png)
 
 ## WEEK 6: Formatting Text
-![Imgur]()
+
 
 ## WEEK 7: Margins, Padding, and Borders
-![Imgur]()
+
 
 ## WEEK 8: Midterm project
-![Imgur]()
+
 
 ## WEEK 9: Adding Graphics to Webpages
-![Imgur]()
+
 
 ## WEEK 10: Sprucing Up Your Site's Navigation
-![Imgur]()
+
 
 ## WEEK 11: Formatting Tables and Forms
-![Imgur]()
+
 
 ## WEEK 12: Introducing CSS Layout
-![Imgur]()
+
 
 ## WEEK 13: Building Float-Based Layouts
-![Imgur]()
+
 
 ## WEEK 14: Positioning Elements on a Webpage
-![Imgur]()
+
 
 ## WEEK 15: Final project
-![Imgur]()
