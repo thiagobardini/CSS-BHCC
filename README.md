@@ -24,6 +24,7 @@
 ![Imgur](https://i.imgur.com/v0F6XLw.png)
 
 ## WEEK 6: Formatting Text
+- [Click here to see the website](https://focused-kirch-1ac797.netlify.app/)
 ![Imgur](https://i.imgur.com/Bt3nA5v.png)
 
 ## WEEK 7: Margins, Padding, and Borders
