@@ -24,7 +24,7 @@
 ![Imgur](https://i.imgur.com/v0F6XLw.png)
 
 ## WEEK 6: Formatting Text
-
+![Imgur](https://i.imgur.com/Bt3nA5v.png)
 
 ## WEEK 7: Margins, Padding, and Borders
 
