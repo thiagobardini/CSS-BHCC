@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  p.some:first-letter {
+    color: #f00;
+    font-size: 2em;
+  }
+
+  p::first-line {
+    color: #00f;
+  }
+
+  p.hint::before {
+    content:'---> ';
+  }
+
+  
+  p.hint::after {
+    content:' <---';
+  }
+
+  input:focus {
+    color: #f0f;
+    background-color: #efc;
+  }
+
+</style>
+<body>
+  <p class="some">This is my country</p>
+  <p class="hint">Land that I love</p>
+  <p>Test</p>
+  <input type="text" name="test">
+</body>
+</html>

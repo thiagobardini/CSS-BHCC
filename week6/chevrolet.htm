@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allan&family=Black+Ops+One&family=Monoton&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+  <link rel="stylesheet" href="nodu_modules/bootstrap/compiler/style.css">
+  <style>
+    body {
+      background-color: goldenrod;
+    }
+
+    .jumbotron {
+      background-image: url(image/car-img-fluid.jpg);
+      background-repeat: no-repeat;
+      /* margin: 0px; */
+      background-size: cover;
+    }
+
+    .display-4 {
+      text-shadow: -3px 4px 5px #000000;
+      /* font-size: 5rem; */
+      text-align: center;
+      color: #ffcc00;
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 0.1em;
+    }
+
+    .lead {
+      font-size: 1.5rem;
+      text-align: center;
+      text-shadow: -3px 4px 5px #000000;
+      font-family: 'Allan', cursive;
+      background: linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
+      background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
+      background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
+      color: white;
+      top: 30px;
+      position: relative;
+    }
+
+    p.special::before {
+      content: '--->  ';
+    }
+
+    p.special::after {
+      content: '  <---';
+    }
+
+    nav {
+      text-align: center;
+      top: 35px;
+    }
+
+    p.navbar-brand:first-letter {
+      color: white;
+      font-size: 1.5em;
+    }
+
+    .vl {
+      border-left: 3px solid gray;
+      height: 70px;
+    }
+
+    .card-header a {
+      text-decoration: none;
+      font-family: 'Kaushan Script', cursive;
+      color: red;
+    }
+
+    @media screen and (max-width:700px) {
+
+      .display-4 {
+        font-size: 3rem;
+      }
+
+      .lead {
+        font-size: 1rem;
+      }
+
+    }
+  </style>
+  <title>Thiago Bardini Motor</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container-fluid">
+        <h1 class="display-4">Thiago Bardini Motor</h1>
+        <p class="lead">A fast and convenient way to research and find a used vehicle that is right for you</p>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning d-block">
+          <p class="navbar-brand mx-auto">Welcome to the website!</p>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="nav justify-content-center mx-auto">
+
+              <li class="nav-item">
+                <a class="navbar-brand" href="index.htm"><img src="image/home-icon.png" alt=""></a>
+              </li>
+
+              <div class="vl"></div>
+              <!-- <li class="divider-vertical"></li> -->
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="image/chevrolet-logo.png" alt="">
+                </a>
+
+                <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="chevrolet.htm#chevrolet" target="chevrolet">CHEVROLET</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="chevrolet.htm#spark" target="chevrolet">Spark</a>
+                  <a class="dropdown-item" href="chevrolet.htm#sonic" target="chevrolet">Sonic</a>
+                  <a class="dropdown-item" href="chevrolet.htm#malibu">Malibu</a>
+                  <a class="dropdown-item" href="chevrolet.htm#impala">Impala</a>
+                  <a class="dropdown-item" href="chevrolet.htm#bolt">Bolt</a>
+                  <a class="dropdown-item" href="chevrolet.htm#camaro">Camaro</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="image/fiatlogo.png" alt="">
+                </a>
+                <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="fiat.htm">FIAT</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="fiat.htm#500x">FIAT® 500X</a>
+                  <a class="dropdown-item" href="fiat.htm#500l">FIAT® 500l</a>
+                  <a class="dropdown-item" href="fiat.htm#124spider">FIAT® 124 Spider</a>
+                  <a class="dropdown-item" href="fiat.htm#500">FIAT® 500</a>
+                  <a class="dropdown-item" href="fiat.htm#500Abarth">FIAT® 500 Abarth</a>
+                  <a class="dropdown-item" href="fiat.htm#124spiderAbarth">FIAT® 124 Spider Abarth</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="image/ford-logo.png" alt="">
+                </a>
+                <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="ford.htm">FORD</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="ford.htm#ecosport">Ecosport</a>
+                  <a class="dropdown-item" href="ford.htm#escape">Escape</a>
+                  <a class="dropdown-item" href="ford.htm#bronco">Bronco</a>
+                  <a class="dropdown-item" href="ford.htm#edge">Edge</a>
+                  <a class="dropdown-item" href="ford.htm#explorer">Explorer</a>
+                  <a class="dropdown-item" href="ford.htm#expedition">Expedition</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="image/honda-logo.png" alt="">
+                </a>
+                <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="honda.htm">HONDA</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="honda.htm#hr-v">HR-V</a>
+                  <a class="dropdown-item" href="honda.htm#cr-v">CR-V</a>
+                  <a class="dropdown-item" href="honda.htm#pilot">Pilot</a>
+                  <a class="dropdown-item" href="honda.htm#passport">Passport</a>
+                  <a class="dropdown-item" href="honda.htm#civic">Civic Sedan</a>
+                  <a class="dropdown-item" href="honda.htm#accord">Accord</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="image/jeep-logo.png" alt="">
+                </a>
+                <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="jeep.htm">JEEP</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="jeep.htm#wrangler">Wrangler</a>
+                  <a class="dropdown-item" href="jeep.htm#grandCher">Grand Cherokee</a>
+                  <a class="dropdown-item" href="jeep.htm#cherokee">Cherokee</a>
+                  <a class="dropdown-item" href="jeep.htm#compass">Compass</a>
+                  <a class="dropdown-item" href="jeep.htm#renegade">Renegade</a>
+                  <a class="dropdown-item" href="jeep.htm#gladiator">Gladiator</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="image/nissan-logo.png" alt="">
+                </a>
+                <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="nissan.htm">NISSAN</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="nissan.htm#versa">Versa</a>
+                  <a class="dropdown-item" href="nissan.htm#sentra">Sentra</a>
+                  <a class="dropdown-item" href="nissan.htm#altima">Altima</a>
+                  <a class="dropdown-item" href="nissan.htm#maxima">Maxima</a>
+                  <a class="dropdown-item" href="nissan.htm#leaf">Nissan Leaf</a>
+                  <a class="dropdown-item" href="nissan.htm#frontier">Frontier</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="image/mazda-logo.png" alt="">
+                </a>
+                <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="mazda.htm">MAZDA</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="mazda.htm#cx-3">CX-3</a>
+                  <a class="dropdown-item" href="mazda.htm#cx-30">CX-30</a>
+                  <a class="dropdown-item" href="mazda.htm#cx-5">CX-5</a>
+                  <a class="dropdown-item" href="mazda.htm#cx-9">CX-9</a>
+                  <a class="dropdown-item" href="mazda.htm#mazda3">Mazda3 Sedan</a>
+                  <a class="dropdown-item" href="mazda.htm#mazda6">Mazda6</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="image/subaru-logo.png" alt="">
+                </a>
+                <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="subaru.htm">SUBARU</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="subaru.htm#impreza">Impreza</a>
+                  <a class="dropdown-item" href="subaru.htm#legacy">Legacy</a>
+                  <a class="dropdown-item" href="subaru.htm#crosstrek">Crosstrek</a>
+                  <a class="dropdown-item" href="subaru.htm#forester">Forester</a>
+                  <a class="dropdown-item" href="subaru.htm#outback">Outback</a>
+                  <a class="dropdown-item" href="subaru.htm#ascent">Ascent</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="image/toyota-logo.png" alt="">
+                </a>
+                <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="toyota.htm">TOYOTA</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="toyota.htm#camry">Camry</a>
+                  <a class="dropdown-item" href="toyota.htm#yaris">Yaris</a>
+                  <a class="dropdown-item" href="toyota.htm#corolla">Corolla</a>
+                  <a class="dropdown-item" href="toyota.htm#prius">Prius</a>
+                  <a class="dropdown-item" href="toyota.htm#avalon">Avalon</a>
+                  <a class="dropdown-item" href="toyota.htm#sienna">Sienna</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="image/volkswagen-logo.png" alt="">
+                </a>
+                <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="vw.htm">VOLKSWAGEN</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="vw.htm#jetta">Jetta</a>
+                  <a class="dropdown-item" href="vw.htm#passat">Passat</a>
+                  <a class="dropdown-item" href="vw.htm#arteon">Arteon</a>
+                  <a class="dropdown-item" href="vw.htm#tiguan">Tiguan</a>
+                  <a class="dropdown-item" href="vw.htm#golf">Golf</a>
+                  <a class="dropdown-item" href="vw.htm#beetle">Beetle</a>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-12 text-center my-n3">
+
+        <img src="image/chevrolet-top.png" class="img-fluid" alt="Responsive image">
+
+      </div>
+    </div>
+
+    <div class="row my-5 mb-4">
+
+      <div id="spark" class="col-sm-6">
+        <div class="card mb-5">
+          <div class="card-header"><a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">SPECIAL
+              ORDER ONLY</a></div>
+          <div class="card-body">
+            <h4 class="class-tittle">Spark </h4>
+            <h6 class="card-subtitle mb-2 text-muted">Starting at: $13,400</h6>
+            <img class="card-img-bottom" src="image/chevrolet-spark.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="sonic" class="col-sm-6">
+        <div class="card mb-5">
+          <div class="card-header"><a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">SPECIAL
+              ORDER ONLY</a></div>
+          <div class="card-body">
+            <h4 class="class-tittle">Sonic</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Starting at: $16,720</h6>
+            <img class="card-img-bottom" src="image/chevrolet-sonic.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-sm-center">
+      <div id="malibu" class="col-sm-6 col-md-4">
+        <div class="card mb-5">
+          <div class="card-body">
+            <h4 class="class-tittle">Malibu</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Starting at: $22,095</h6>
+            <img class="card-img-bottom" src="image/chevrolet-malibu.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="impala" class="col-sm-6 col-md-4">
+        <div class="card mb-5">
+          <div class="card-body">
+            <h4 class="class-tittle">Impala</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Starting at: $31,620</h6>
+            <img class="card-img-bottom" src="image/chevrolet-impala.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="bolt" class="col-sm-6 col-md-4">
+        <div class="card mb-5">
+          <div class="card-body">
+            <h4 class="class-tittle">Bolt</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Starting at: $36,620</h6>
+            <img class="card-img-bottom" src="image/chevrolet-bolt.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="camaro" class="col-sm-6 col-md-4">
+        <div class="card mb-5">
+          <div class="card-body">
+            <h4 class="class-tittle">Camaro</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Starting at: $25,000</h6>
+            <img class="card-img-bottom" src="image/chevrolet-camaro.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--modal-->
+
+  <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Call NOW!!<a href="tel:(978)%20648-7075">&nbsp;(978) 648-7075</a></h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <img src="image/specialOrder.jpeg" class="rounded mx-auto d-block" alt="Responsive image">
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <p>Copyright &copy; 2020 -&nbsp; <a href="https://github.com/thiagobardini" target="_blank"><strong>by Thiago
+            Bardini</strong></a></p>
+    </div>
+  </footer>
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+
+</body>
+
+</html>
