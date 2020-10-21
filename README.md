@@ -11,23 +11,37 @@
 
 ### :neckbeard: Programming Languages: HTML, CSS, Bootstrap and JavaScript
 
-## WEEK 2: Creating Styles and Stylesheets
+## WEEK 2: Lecture
+- [Click here to see the website](https://keen-blackwell-3a4811.netlify.app/)
+<br>
+
 ![Imgur](https://i.imgur.com/SEdSzDc.png)
 
-## WEEK 3: Selectors: Identifying What to Style
+## WEEK 3: Lecture
+- [Click here to see the website](https://hopeful-wing-9780f5.netlify.app/)
+<br>
+
 ![Imgur](https://i.imgur.com/vvBc2Rs.png)
 
-## WEEK 4: Saving Time with Style Inheritance
+## WEEK 4: Gradient Backgrounds
+- [Click here to see the website](https://infallible-mirzakhani-9db2f0.netlify.app/)
+<br>
+
 ![Imgur](https://i.imgur.com/ZHGiFCs.png)
 
-## WEEK 5: Managing Multiple Styles: The Cascade
+## WEEK 5: Free Form Styling
+- [Click here to see the website](https://optimistic-keller-49f9b8.netlify.app/)
+<br>
+
 ![Imgur](https://i.imgur.com/v0F6XLw.png)
 
-## WEEK 6: Formatting Text
+## WEEK 6: Specialty CSS
 - [Click here to see the website](https://focused-kirch-1ac797.netlify.app/)
+<br>
+
 ![Imgur](https://i.imgur.com/Bt3nA5v.png)
 
-## WEEK 7: Margins, Padding, and Borders
+## WEEK 7: Numbering
 
 
 ## WEEK 8: Midterm project
