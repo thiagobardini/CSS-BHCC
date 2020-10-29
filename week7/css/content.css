@@ -19,11 +19,13 @@ section {
 #first {
   width: 400px;
   float: left;
-  /* background-color: yellow; */
+  border-right: 1px solid #676867;
+  padding-right: 20px;
 }
 
 #second {
   width: 400px;
   float: right;
-  /* background-color: red;
+  /* background-color: red;*/
+  margin-left: -20px;
 } 
