@@ -42,6 +42,9 @@
 ![Imgur](https://i.imgur.com/Bt3nA5v.png)
 
 ## WEEK 8: Midterm project
+- [Click here to see the website](https://xenodochial-montalcini-7a54a1.netlify.app/)
+<br>
+
 ![Imgur](https://i.imgur.com/wk4HmxQ.png)
 
 ## WEEK 9: Adding Graphics to Webpages
