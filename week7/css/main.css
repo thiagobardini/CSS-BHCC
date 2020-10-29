@@ -1,0 +1,38 @@
+
+@charset "UTF-8";
+
+@import "header.css";
+@import "content.css";
+@import "images.css";
+@import "links.css";
+@import "main.css";
+
+body {
+  background-color: salmon;
+}
+
+#container {
+  width: 900px;
+  height: auto;
+  position: absolute;
+  margin: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+  padding: 20px;
+  background-image: url(../image/backImage.png);
+  background-repeat: no-repeat;
+  background-position-x: 600px;
+  background-position-y: 550px;
+  background-position: fixed;
+  background-color: #ffffff;
+}
+
+footer p {
+  height: 40px;
+  float: left;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+

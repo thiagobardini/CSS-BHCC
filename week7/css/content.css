@@ -1,0 +1,29 @@
+
+main {
+  display:block;
+  width: 900px;
+  height: auto;
+  background-color: transparent;
+}
+
+section {
+  margin: 20px;
+}
+
+.top {
+  width: 860px;
+  float: left;
+  /* background-color: turquoise; */
+}
+
+#first {
+  width: 400px;
+  float: left;
+  /* background-color: yellow; */
+}
+
+#second {
+  width: 400px;
+  float: right;
+  /* background-color: red;
+} 
