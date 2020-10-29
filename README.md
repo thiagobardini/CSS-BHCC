@@ -35,17 +35,14 @@
 
 ![Imgur](https://i.imgur.com/v0F6XLw.png)
 
-## WEEK 6: Specialty CSS
+## WEEK 6-7: Specialty CSS
 - [Click here to see the website](https://focused-kirch-1ac797.netlify.app/)
 <br>
 
 ![Imgur](https://i.imgur.com/Bt3nA5v.png)
 
-## WEEK 7: Numbering
-
-
 ## WEEK 8: Midterm project
-
+![Imgur](https://i.imgur.com/wk4HmxQ.png)
 
 ## WEEK 9: Adding Graphics to Webpages
 
