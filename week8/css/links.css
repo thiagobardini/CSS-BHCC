@@ -1,0 +1,52 @@
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  text-shadow: -1px 1px 1px #000000;
+}
+
+.btn-one {
+  background: #2162af;
+  border-color: transparent !important;
+  color: #fff !important;
+  border-radius: 5px;
+  padding: 10px 25px !important;
+  width: 200px;
+  text-align: center;
+  margin: 10px 15px;
+}
+
+.btn-one:hover {
+  background: #78b0d3;
+}
+
+#power a {
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  text-shadow: -3px 4px 5px #000000;
+  text-align: center;
+  font-size: 25px;
+}
+
+.opacityBox a:hover {
+  text-decoration: none;
+  text-shadow: none;
+}
+
+footer a {
+  color: #ffff;
+}
+
+footer a {
+  color: #ffff;
+  font-size: 17px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  text-shadow: -1px 1px 1px #78b0d3;
+}

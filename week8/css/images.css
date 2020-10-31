@@ -1,0 +1,16 @@
+#container {
+  background-image: url(../image/backImage.png);
+  background-repeat: no-repeat;
+  background-position-x: 640px;
+  background-position-y: 427px;
+  background-position: fixed;
+  background-color: #ffffff;
+}
+
+.img-left {
+  float: left;
+}
+
+.img-right {
+  float: right;
+}
