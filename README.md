@@ -47,8 +47,11 @@
 
 ![Imgur](https://i.imgur.com/kgFtmqH.png)
 
-## WEEK 9: Adding Graphics to Webpages
+## WEEK 9: Animatable CSS Components
+- [Click here to see the website](https://quizzical-lalande-bf2a10.netlify.app/)
+<br>
 
+![Imgur](https://i.imgur.com/izjYhxk.png)
 
 ## WEEK 10: Sprucing Up Your Site's Navigation
 
