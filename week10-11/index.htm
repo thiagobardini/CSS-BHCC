@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/program1.css">
+  <link rel="stylesheet" href="css/program2.css">
+  <link rel="stylesheet" href="css/program3.css">
+  <title>Animation CSS3</title>
+  <style>
+    body {
+      background: #68392d;
+      font-family: sans-serif;
+      margin: 0px;
+    }
+    p {
+      font-size: 11pt;
+      color: #ffff;
+    }
+    a {
+      text-decoration: none;
+      color: #ffff;
+    }
+    a:hover {
+      text-decoration: none;
+      text-shadow: -1px 1px 1px#ffff;
+    }
+    main {
+      height: 700px;
+      background-image: url(./image/scenary.png);
+      padding: 0px;
+      margin: 0px;
+      position: relative;
+    }
+    main img {
+      position: absolute;
+    }
+    footer {
+      float: left;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      left: 0%;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="block-effect" style="--td: 1.2s">
+      <div class="block-reveal" style="--bc: #fdfeff; --d: .1s">New Movie</div>
+      <div class="block-reveal" style="--bc: #141518; --d: .5s">Mission Impossible</div>
+    </h1>
+    <img class="helicopter" src="./image/helicopter.gif">
+    <img class="imgOne" src="./image/img0.gif">
+    <img class="imgTwo" src="./image/img1.gif">
+    <img class="imgThree" src="./image/img2.gif">
+    <img class="ambulance" src="./image/ambulance.gif" alt="">
+  </main>
+  <footer>
+    <p>Copyright 2020, by <a href="https://github.com/thiagobardini/CSS-BHCC">Thiago Bardini</a></p>
+  </footer>
+</body>
+</html>
