@@ -57,7 +57,7 @@
 - [Click here to see the website](https://compassionate-bardeen-d6644c.netlify.app/)
 <br>
 
-![](https://drive.google.com/file/d/1njdgq5MrhFwkXtpHnhMKj2ljhNwS-O1s/preview)
+![Imgur](animationCSS3.gif)
 
 ## WEEK 12: Introducing CSS Layout
 
