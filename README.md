@@ -57,7 +57,7 @@
 - [Click here to see the website](https://compassionate-bardeen-d6644c.netlify.app/)
 <br>
 
-![](https://github.com/thiagobardini/CSS-BHCC/blob/master/animationCSS3.gif)
+![](https://github.com/thiagobardini/CSS-BHCC/blob/master/week10-11/image/animationCSS3.gif)
 
 ## WEEK 12: Introducing CSS Layout
 
