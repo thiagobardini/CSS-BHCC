@@ -1,4 +1,4 @@
-0# CSS3-BHCC
+# CSS3-BHCC
 
 ## BHCC - Information Technology - CMT 125 Cascading Style Sheets - Fall 2020
 
