@@ -59,5 +59,8 @@
 
 ![](https://github.com/thiagobardini/CSS-BHCC/blob/master/week10-11/image/animationCSS3.gif)
 
-## WEEK 12: Flex-Box
+## WEEK 12-13: Using CSS Library (Version: Desktop and Mobile)
+- [Click here to see the website](https://musing-lovelace-59f57b.netlify.app/)
+<br>
 
+![](https://i.imgur.com/qDpMK6H.png)

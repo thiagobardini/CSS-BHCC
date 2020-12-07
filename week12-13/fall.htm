@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>W3.CSS Template</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+   <script src="https://kit.fontawesome.com/2fee02c954.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="css/custom.css">
+   <style>
+      section {
+         height: 550px;
+      }
+
+      section#fall h1 {
+         font-size: 36px;
+      }
+
+      section#fall p {
+         font-size: 20px;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- Sidebar -->
+   <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()"
+         class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+         <i class="fa fa-remove"></i>
+      </a>
+      <div class="w3-bar-block w3-center">
+         <a href="index.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-24"><i
+               class="fas fa-home"></i>&nbsp;home</a>
+
+         <a href="winter.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><i
+               class="fas fa-snowflake"></i>&nbsp;winter</a>
+         <a href="spring.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><i
+               class="fas fa-leaf"></i>&nbsp;spring</a>
+         <a href="summer.htm" class="w3-bar-item w3-button w3-text-grey w3-hover-black"><i
+               class="fas fa-sun"></i></i>&nbsp;summer</a>
+
+         <a href="https://github.com/thiagobardini/css-bhcc"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-24"><i
+               class="fab fa-github"></i>&nbsp;thiagobardini</a>
+      </div>
+   </nav>
+
+   <!-- !PAGE CONTENT! -->
+   <div class="w3-content" style="max-width:1500px">
+      <!-- Header -->
+      <div>
+         <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+         <header class="w3-center w3-padding-top-32">
+
+            <div class="w3-display-topleft">
+               <a href="index.htm"><img class="season-img" src="./images/seasons.png" alt="seasons icon"></a>
+            </div>
+            <h1 class=""><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Four Seasons</b></h1>
+            <h1 class="floripa"><b>Florianópolis - Brazil</b></h1>
+         </header>
+
+         <!-- Photo Grid -->
+         <div class="w3-row">
+            <div class="w3-auto">
+
+               <section id="fall" class="w3-margin drk">
+                  <h1>Fall</h1>
+                  <p class="w3-hover-text-red">One of the biggest advantages of visiting Florianópolis in autumn is the
+                     pleasant climate of the region at this time of year. It is the best time to visit. Despite the
+                     morning
+                     chill, which is ideal for those who want to have fun outdoors without running the risk of being
+                     very
+                     cold or suffering from hot temperatures.</p>
+               </section>
+
+            </div>
+         </div>
+         <!-- End Page Content -->
+
+         <!-- About Me -->
+         <div id="about" class="w3-container w3-center" style="margin-top:20px">
+
+            <a href="https://github.com/thiagobardini/css-bhcc"><img src="./images/tbardini.png" alt="me"
+                  style="width:80%;max-width:320px"></a>
+         </div>
+      </div>
+
+      <!-- End Page Content -->
+   </div>
+
+   <!-- Footer -->
+   <footer class="w3-padding-64 w3-black w3-center w3-opacity w3-xlarge">
+      <p class="w3-medium">Copyright &copy; 2020 - by <a href="https://github.com/thiagobardini/css-bhcc"
+            target="_blank" class="w3-hover-text-green">Thiago Bardini</a></p>
+   </footer>
+
+   <script>
+      // Toggle grid padding
+      function myFunction() {
+         var x = document.getElementById("myGrid");
+         if (x.className === "w3-row") {
+            x.className = "w3-row-padding";
+         } else {
+            x.className = x.className.replace("w3-row-padding", "w3-row");
+         }
+      }
+
+      // Open and close sidebar
+      function w3_open() {
+         document.getElementById("mySidebar").style.width = "100%";
+         document.getElementById("mySidebar").style.display = "block";
+      }
+
+      function w3_close() {
+         document.getElementById("mySidebar").style.display = "none";
+      }
+   </script>
+
+</body>
+
+</html>
