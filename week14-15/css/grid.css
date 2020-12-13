@@ -1,0 +1,74 @@
+:root {
+   --main-radius:5px;
+   --main-padding:5px;
+}
+
+.container {
+   display: grid;
+   height: 100vh;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 138px 190px auto 150px;
+   grid-template-areas: 
+      "header header header header"
+      "about about about sidebar"
+      "content1 content1 content2 sidebar"
+      "footer footer footer footer";
+   grid-gap: 0.2rem;
+}
+
+.header {
+   grid-area: header;
+   border-radius: var(--main-radius);
+   padding-top: var(--main-padding);
+}
+
+.about {
+   grid-area: about;
+   border-radius: var(--main-radius);
+   padding: var(--main-padding);
+}
+
+.content1 {
+   grid-area: content1;
+   border-radius: var(--main-radius);
+   padding: var(--main-padding);
+}
+
+.content2 {
+   grid-area: content2;
+   border-radius: var(--main-radius);
+   padding: var(--main-padding);
+}
+
+.sidebar {
+   grid-area: sidebar;
+   border-radius: var(--main-radius);
+   padding: var(--main-padding);
+}
+
+.footer {
+   grid-area: footer;
+   border-radius: var(--main-radius);
+   padding: var(--main-padding);
+}
+
+@media only screen and (max-width: 550px) {
+   .w3-content {
+      width: 550px;
+   }
+
+   .container {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 1fr;
+      grid-template-rows: 138px 265px 400px 255px 255px 255px;
+      grid-template-areas: 
+         "header"
+         "about"
+         "sidebar"
+         "content1"
+         "content2"
+         "footer";
+      grid-gap: 0.2rem;
+   }
+}

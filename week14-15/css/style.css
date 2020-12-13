@@ -40,28 +40,28 @@ body {
 
 
 
-.content {
+main {
    /* margin-top: 20px;
    margin-bottom: 20px; */
    background: #129a22;
 }
 
-.article {
+.content {
    width: 100%;
    margin-top: 20px;
    margin-bottom: 20px;
    margin-right: 20px;
 }
 
-.aboutUs {
+.item-a {
    background-color: yellowgreen;
 }
 
-.discussion {
+.item-b {
    background-color: darkorchid;
 }
 
-.sidebar {
+.item-c {
    margin-top: 20px;
    margin-bottom: 20px;
    background-color: deepskyblue;
@@ -69,7 +69,7 @@ body {
    width: 35%;
 }
 
-.footerWrapper{
+footer{
    background:#616161
 }
 
