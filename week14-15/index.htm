@@ -2,112 +2,208 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>About Us</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/flexbox.css">
-  <!-- <link rel="stylesheet" href="css/grid.css"> -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" media="print" href="print.css" />
+   <title>About Us</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/flexbox.css">
+   <link rel="stylesheet" href="css/grid.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" media="print" href="print.css" />
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+   <script src="https://kit.fontawesome.com/2fee02c954.js" crossorigin="anonymous"></script>
 </head>
+<style>
+   h1 {
+      font-size: 2em;
+   }
+
+   h2 {
+      font-size: 1.5em;
+   }
+
+   @media only screen and (max-width: 769px) {
+      h1 {
+         font-size: 1.4em;
+         font-weight: bold;
+      }
+
+      h2 {
+         font-size: 1.2em;
+         font-weight: bold;
+      }
+
+      h3 {
+         font-size: 1.1em;
+         font-weight: bold;
+      }
+   }
+</style>
 
 <body>
-
-  <header class="header">
-    <div class="container">
-      <div class="header-banner">
-        <a href="index.htm">
-          <img src="images/logo.png" width="264" height="50" class="logo">
-          <h1>The Design List</h1>
-        </a>
+   <!-- NAVBAR -->
+   <nav class="w3-sidebar w3-white w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()"
+         class="w3-button w3-white w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+         <i class="fa fa-remove"></i>
+      </a>
+      <div class="w3-bar-block w3-center">
+         <a href="winter.htm" class="w3-bar-item w3-button w3-text-black w3-hover-black"><i
+               class="fas fa-home"></i>&nbsp;home</a>
+         <a href="summer.htm" class="w3-bar-item w3-button w3-text-black w3-hover-black"><i
+               class="fab fa-angellist"></i>&nbsp;about us</a>
+         <a href="spring.htm" class="w3-bar-item w3-button w3-text-black w3-hover-black"><i
+               class="fas fa-book-reader"></i>&nbsp;newsletters</a>
+         <a href="https://github.com/thiagobardini/css-bhcc"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-24"><i
+               class="fab fa-github"></i>&nbsp;thiagobardini</a>
       </div>
+   </nav>
 
-      <nav class="header-nav">
-        <a class="header-nav-link homeLink" href="index.html">homeICONE</a>
-        <a class="header-nav-link newsLink" href="forums/index.html">newsletters<span></span></a>
-        <a class="header-nav-link aboutLink" href="#">about us<span></span></a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="page">
-    <div class="container">
+   <div class="w3-content" style="max-width:1500px">
+      <div class="container">
+         <div class="navbar">
+            <div class="toggle">
+               <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i
+                     class="fa fa-bars"></i></span>
+            </div>
+         </div>
 
-      <div class="content">
+         <header class="header">
+            <div class="header-banner">
+               <div class="header-flex">
+                  <a href="index.htm"><img src="image/tbardini.png" class="logo"></a>
+                  <a class="title" href="index.htm">
+                     <h1>The Design List</h1>
+                  </a>
+               </div>
+            </div>
 
-        <div class="item-a">
-          <h1>About The Design List</h1>
-          <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur. Velit esse
-            cillum
-            dolore ullamco laboris nisi ut enim ad minim veniam.</p>
-          <p>Ut aliquip ex ea commodo consequat. Cupidatat non proident, sunt in culpa sed do eiusmod tempor incididunt.
-            Excepteur sint occaecat mollit anim id est laborum. Ut labore et dolore magna aliqua. Quis nostrud
-            exercitation
-            velit esse cillum dolore ut enim ad minim veniam.</p>
+            <div id="header-nav-hidder">
+               <nav id="header-nav">
+                  <a class="header-nav-link" href="index.htm">home</a>
+                  <a class="header-nav-link" href="#">about us</a>
+                  <a class="header-nav-link" href="#">newsletters</a>
+               </nav>
+            </div>
+         </header>
 
-          <h3>Related Sites</h3>
-          <nav class="about-nav">
-            <a class="about-nav-link" href="http://www.printmag.com/">Print Magazine</a>
-            <a class="about-nav-link" href="http://www.commarts.com/">Communication Arts</a>
-            <a class="about-nav-link" href="http://www.aiga.org/">AIGA</a>
-            <a class="about-nav-link" href="http://www.sawmac.com/">Sawyer McFarland Media</a>
-          </nav>
-        </div>
+         <main class="about">
+            <h1>About The Design List</h1>
+            <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur. Velit
+               esse
+               cillum
+               dolore ullamco laboris nisi ut enim ad minim veniam.</p>
+            <p>Ut aliquip ex ea commodo consequat. Cupidatat non proident, sunt in culpa sed do eiusmod tempor
+               incididunt.
+               Excepteur sint occaecat mollit anim id est laborum. Ut labore et dolore magna aliqua. Quis nostrud
+               exercitation
+               velit esse cillum dolore ut enim ad minim veniam.</p>
 
-        <div class="item-b">
-          <h2>Not Just Another Discussion</h2>
-          <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur. Velit esse
-            cillum dolore ullamco laboris nisi ut enim ad minim veniam.</p>
-          <p>Ut aliquip ex ea commodo consequat. Cupidatat non proident, sunt in culpa sed do eiusmod tempor incididunt.
-            Excepteur sint occaecat mollit anim id est laborum. Ut labore et dolore magna aliqua. Quis nostrud
-            exercitation velit esse cillum dolore ut enim ad minim veniam.</p>
-          <h2>Could it Actually Be From Another Planet?</h2>
-          <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur. Velit esse
-            cillum dolore ullamco laboris nisi ut enim ad minim veniam.</p>
-          </div>
+            <h3>Related Sites</h3>
+            <nav class="about-nav">
+               <a class="about-nav-link" href="http://www.printmag.com/">Print Magazine</a>
+               <a class="about-nav-link" href="http://www.commarts.com/">Communication Arts</a>
+               <a class="about-nav-link" href="http://www.aiga.org/">AIGA</a>
+               <a class="about-nav-link" href="http://www.sawmac.com/">Sawyer McFarland Media</a>
+            </nav>
+         </main>
+
+         <div class="content1">
+            <h2>Not Just Another Discussion</h2>
+            <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur. Velit
+               esse
+               cillum dolore ullamco laboris nisi ut enim ad minim veniam.</p>
+            <p>Ut aliquip ex ea commodo consequat. Cupidatat non proident, sunt in culpa sed do eiusmod tempor
+               incididunt.
+               Excepteur sint occaecat mollit anim id est laborum. Ut labore et dolore magna aliqua. Quis nostrud
+               exercitation velit esse cillum dolore ut enim ad minim veniam.</p>
+         </div>
+
+         <div class="content2">
+
+            <div class="w3-row-padding">
+               <div class="w3-first  w3-margin-bottom">
+                  <img src="./image/planet.png" alt="Norway" style="width:100%" class="w3-hover-opacity w3-round">
+                  <div class="w3-white">
+                     <h2>Could it Actually Be From Another Planet?</h2>
+                     <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur.
+                        Velit
+                        esse cillum dolore ullamco laboris nisi ut enim ad minim veniam.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="sidebar">
+            <nav class="side-nav">
+               <a class="side-nav-link" href="#" class="contactLink">Contact Us</a>
+               <a class="side-nav-link" href="#" class="sedLink"> Sed do eiusmod</a>
+               <a class="side-nav-link" href="#" class="cupidLink">Cupidatat </a>
+            </nav>
+
+            <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur. Velit esse
+               cillum dolore ullamco laboris nisi ut enim ad minim veniam.</p>
+            <p>Ut aliquip ex ea commodo consequat. Cupidatat non proident, sunt in culpa sed do eiusmod tempor
+               incididunt.
+               Excepteur sint occaecat mollit anim id est laborum. Ut labore et dolore magna aliqua. Quis nostrud
+               exercitation velit esse cillum dolore ut enim ad minim veniam.</p>
+            <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur. Velit esse
+               cillum dolore ullamco laboris nisi ut enim ad minim veniam.</p>
+            <p>Ut aliquip ex ea commodo consequat. Cupidatat non proident, sunt in culpa sed do eiusmod tempor
+               incididunt.
+               Excepteur sint occaecat mollit anim id est laborum. Ut labore et dolore magna aliqua. Quis nostrud
+               exercitation velit esse cillum dolore ut enim ad minim veniam.</p>
+         </div>
+
+         <footer class="footer">
+
+            <nav class="footer-nav">
+               <a class="footer-nav-link" href="index.html" class="homeLink">home</a>
+               <a class="footer-nav-link" href="forums/index.html" class="newsLink">newsletters</a>
+               <a class="footer-nav-link" href="about/index.html" class="aboutLink">about us</a>
+            </nav>
+
+            <div class="footerMain">
+               <p><strong>Copyright 2010, The Design List</strong></p>
+               <p>All rights, including photographic, polygraphic, and mineral are reserved. Sed do eiusmod tempor
+                  incididunt
+                  eu fugiat nulla pariatur. Duis aute irure dolor mollit anim id est laborum. Sed do eiusmod tempor
+                  incididunt
+                  eu fugiat nulla pariatur. Duis aute irure dolor mollit anim id est laborum. Sed do eiusmod tempor
+                  incididunt
+                  eu fugiat nulla pariatur. Duis aute irure dolor mollit anim id est laborum. Sed do eiusmod tempor
+                  incididunt
+                  eu fugiat nulla pariatur. Duis aute irure dolor mollit anim id est laborum.</p>
+            </div>
+         </footer>
       </div>
+   </div>
 
-      <div class="item-c">
-        <nav class="side-nav">
-          <a class="side-nav-link" href="#" class="contactLink">Contact Us</a>
-          <a class="side-nav-link" href="#" class="sedLink"> Sed do eiusmod</a>
-          <a class="side-nav-link" href="#" class="cupidLink">Cupidatat </a>
-        </nav>
+   <script>
+      // Toggle grid padding
+      function myFunction() {
+         var x = document.getElementById("myGrid");
+         if (x.className === "w3-row") {
+            x.className = "w3-row-padding";
+         } else {
+            x.className = x.className.replace("w3-row-padding", "w3-row");
+         }
+      }
 
-        <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur. Velit esse
-          cillum dolore ullamco laboris nisi ut enim ad minim veniam.</p>
-        <p>Ut aliquip ex ea commodo consequat. Cupidatat non proident, sunt in culpa sed do eiusmod tempor incididunt.
-          Excepteur sint occaecat mollit anim id est laborum. Ut labore et dolore magna aliqua. Quis nostrud
-          exercitation velit esse cillum dolore ut enim ad minim veniam.</p>
-        <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur. Velit esse
-          cillum dolore ullamco laboris nisi ut enim ad minim veniam.</p>
-        <p>Ut aliquip ex ea commodo consequat. Cupidatat non proident, sunt in culpa sed do eiusmod tempor incididunt.
-          Excepteur sint occaecat mollit anim id est laborum. Ut labore et dolore magna aliqua. Quis nostrud
-          exercitation velit esse cillum dolore ut enim ad minim veniam.</p>
-        </div>
+      // Open and close sidebar
+      function w3_open() {
+         document.getElementById("mySidebar").style.width = "100%";
+         document.getElementById("mySidebar").style.display = "block";
+      }
 
-    </div>
-  </main>
+      function w3_close() {
+         document.getElementById("mySidebar").style.display = "none";
+      }
+   </script>
 
-
-  <footer>
-    <div class="container">
-      <nav class="footer-nav">
-          <a class="footer-nav-link" href="index.html" class="homeLink">home</a>
-          <a class="footer-nav-link" href="forums/index.html" class="newsLink">newsletters</a>
-          <a class="footer-nav-link" href="about/index.html" class="aboutLink">about us</a>
-      </nav>
-
-      <div class="footerMain">
-        <p><strong>Copyright 2010, The Design List</strong></p>
-        <p>All rights, including photographic, polygraphic, and mineral are reserved. Sed do eiusmod tempor incididunt
-          eu fugiat nulla pariatur. Duis aute irure dolor mollit anim id est laborum. Sed do eiusmod tempor incididunt
-          eu fugiat nulla pariatur. Duis aute irure dolor mollit anim id est laborum. Sed do eiusmod tempor incididunt
-          eu fugiat nulla pariatur. Duis aute irure dolor mollit anim id est laborum. Sed do eiusmod tempor incididunt
-          eu fugiat nulla pariatur. Duis aute irure dolor mollit anim id est laborum.</p>
-      </div>
-    </div>
-  </footer>
 </body>
 
 </html>

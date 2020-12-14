@@ -1,74 +1,81 @@
 :root {
-   --main-radius:5px;
-   --main-padding:5px;
+   --main-radius: 5px;
+   --main-padding: 5px;
+   --main-margin: 0.2rem;
 }
 
 .container {
    display: grid;
    height: 100vh;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 138px 190px auto 150px;
-   grid-template-areas: 
-      "header header header header"
-      "about about about sidebar"
-      "content1 content1 content2 sidebar"
+   grid-template-columns: 1fr 1fr 0.7fr 50px;
+   grid-template-rows: 138px 290px auto auto;
+   grid-template-areas:
+      "header header header navbar"
+      "about about sidebar sidebar"
+      "content1 content2 sidebar sidebar"
       "footer footer footer footer";
-   grid-gap: 0.2rem;
+   /* grid-gap: 0.2rem; */
 }
 
 .header {
    grid-area: header;
-   border-radius: var(--main-radius);
-   padding-top: var(--main-padding);
+   border-bottom-left-radius: var(--main-radius);
+}
+
+.navbar {
+   grid-area: navbar;
+   border-bottom-right-radius: var(--main-radius);
 }
 
 .about {
    grid-area: about;
    border-radius: var(--main-radius);
    padding: var(--main-padding);
+   margin: var(--main-margin);
 }
 
 .content1 {
    grid-area: content1;
    border-radius: var(--main-radius);
    padding: var(--main-padding);
+   margin: var(--main-margin);
 }
 
 .content2 {
    grid-area: content2;
    border-radius: var(--main-radius);
    padding: var(--main-padding);
+   margin: var(--main-margin);
 }
 
 .sidebar {
    grid-area: sidebar;
    border-radius: var(--main-radius);
    padding: var(--main-padding);
+   margin: var(--main-margin);
 }
 
 .footer {
    grid-area: footer;
    border-radius: var(--main-radius);
    padding: var(--main-padding);
+   margin: var(--main-margin);
 }
 
-@media only screen and (max-width: 550px) {
-   .w3-content {
-      width: 550px;
-   }
-
+@media only screen and (max-width: 769px) {
    .container {
       display: grid;
       height: 100vh;
-      grid-template-columns: 1fr;
-      grid-template-rows: 138px 265px 400px 255px 255px 255px;
-      grid-template-areas: 
-         "header"
-         "about"
-         "sidebar"
-         "content1"
-         "content2"
-         "footer";
-      grid-gap: 0.2rem;
+      grid-template-columns: 0.9fr 0.2fr;
+      /* grid-template-rows: 138px 455px 400px 255px 255px 255px; */
+      grid-template-rows: auto;
+      grid-template-areas:
+         "header navbar"
+         "about about"
+         "sidebar sidebar"
+         "content1 content1"
+         "content2 content2"
+         "footer footer";
+      /* grid-gap: 0.2rem; */
    }
 }
