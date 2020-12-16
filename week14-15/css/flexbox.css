@@ -15,7 +15,7 @@
 
 .about-nav {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
 }
 
 /* footer */
@@ -28,4 +28,12 @@
 .footer-nav {
    display: flex;
    justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+.about-nav {
+   display: contents;
+   justify-content: center;
+}
+
 }

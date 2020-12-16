@@ -3,8 +3,6 @@ body {
    font-family: 'Open Sans', Arial, sans-serif;
 }
 
-
-
 .container {
    width: 95%;
    margin: 0 auto;
@@ -13,7 +11,6 @@ body {
 
 .header {
    background-color: #FFF;
-   transition: .3s;
 }
 
 .navbar {
@@ -30,35 +27,40 @@ body {
    font-size: 2.5em;
    font-weight: bolder;
    padding-left: 10px;
-}
-
-.header-nav {
-   width: auto;
-   display: auto;
+   transition: .5s;
 }
 
 .header-nav-link {
    padding: 10px;
-   margin-bottom: 10px;
-   color: #9799A6;
-   background-color: #323232;
+   margin-bottom: 25px;
+   color: #000;
+   background-color: #fff;
    text-decoration: none;
    transition: .5s;
    display: block;
    border-bottom: 1px solid #323232;
-   width: auto;
-   margin: 0 0 0 10px;
-   border-radius: 5px;
-   border: 1px solid #9799A6;
 }
+
+.header-nav-link-black {
+   padding: 10px;
+   margin-bottom: 25px;
+   color: #fff;
+   background-color: #000;
+   text-decoration: none;
+   transition: .5s;
+   display: block;
+   border-bottom: 1px solid #323232;
+}
+
 
 
 .about {
-   background-color: #6c586c;
+   /* background-color: #6c586c; */
+   background-color: #F1F1F1;
 }
 
 .about-nav {
-   width: auto;
+   /* width: auto; */
 }
 
 .about-nav-link {
@@ -66,8 +68,8 @@ body {
 }
 
 .about-nav-link:hover {
-   color: #FFF;
-   background-color: #9799A6;
+   /* color: #FFF;
+   background-color: #9799A6; */
 }
 
 .content1 {
@@ -95,16 +97,19 @@ body {
 	padding: 10px;
 	margin-bottom: 10px;
 	color: #9799A6;
-	background-color: #FFF;
 	text-decoration: none;
 	transition: .5s;
 	display: block;
-	border-bottom: 1px solid #9799A6;
+	border-bottom: 1px solid #fff;
 }
 
-.footerMain {
-   text-align: center;
-   margin-top: 20px;
+.footer-nav-link:hover {
+   color: #000;
+   background-color: #FFF;
+} 
+
+.copyright {
+   color: #fff;
 }
 
 .toggle {
@@ -132,19 +137,31 @@ body {
 	.header-nav {
 		width: auto;
 	}
+}
 
-
-/* 
-   .footer-nav-link  {
-      width: auto;
-		margin: 0 0 0 10px;
-		border-radius: 5px;
+@media(min-width: 814px) {
+   .header-nav-link {
 		border: 1px solid #9799A6;
+	}
+
+	.header-nav-link:hover {
+		color: #FFF;
+      background-color: #000;
    }
 
-   .footer-nav-link:hover {
-		color: #FFF;
-		background-color: #9799A6;
-	} */
+   .header-nav-link-black:hover {
+      color: #000;
+      background-color: #fff;
+   }
 
+   
+   .header-nav {
+      width: auto;
+	}
+
+	.header-nav-link {
+		width: auto;
+		margin: 0 0 18px 10px;
+   }
+   
 }

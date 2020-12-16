@@ -4,7 +4,7 @@
 <head>
    <title>About Us</title>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/flexbox.css">
    <link rel="stylesheet" href="css/grid.css">
@@ -21,6 +21,10 @@
 
    h2 {
       font-size: 1.5em;
+   }
+
+   .copyright {
+      color: #fff;
    }
 
    @media only screen and (max-width: 769px) {
@@ -61,7 +65,6 @@
       </div>
    </nav>
 
-
    <div class="w3-content" style="max-width:1500px">
       <div class="container">
          <div class="navbar">
@@ -84,7 +87,7 @@
             <div id="header-nav-hidder">
                <nav id="header-nav">
                   <a class="header-nav-link" href="index.htm">home</a>
-                  <a class="header-nav-link" href="#">about us</a>
+                  <a class="header-nav-link header-nav-link-black" href="#">about us</a>
                   <a class="header-nav-link" href="#">newsletters</a>
                </nav>
             </div>
@@ -104,11 +107,12 @@
 
             <h3>Related Sites</h3>
             <nav class="about-nav">
-               <a class="about-nav-link" href="http://www.printmag.com/">Print Magazine</a>
-               <a class="about-nav-link" href="http://www.commarts.com/">Communication Arts</a>
-               <a class="about-nav-link" href="http://www.aiga.org/">AIGA</a>
-               <a class="about-nav-link" href="http://www.sawmac.com/">Sawyer McFarland Media</a>
+               <a class="w3-button w3-small w3-circle w3-text-orange w3-margin w3-padding-16 w3-black" href="http://www.printmag.com/">Print <br> Magazingray
+               <a class="w3-button w3-small w3-circle w3-text-yellow w3-margin w3-padding-16 w3-black" href="http://www.commarts.com/">Communication <br> Art
+               <a class="w3-button w3-small w3-circle w3-text-sand w3-margin w3-padding-32 w3-black" href="http://www.aiga.org/">AIGA</a>
+               <a class="w3-button w3-small w3-circle w3-text-light-blue w3-margin w3-padding-16 w3-black" href="http://www.sawmac.com/">Sawyer <br>McFarland Media</a>
             </nav>
+
          </main>
 
          <div class="content1">
@@ -130,19 +134,24 @@
                   <div class="w3-white">
                      <h2>Could it Actually Be From Another Planet?</h2>
                      <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur.
-                        Velit
-                        esse cillum dolore ullamco laboris nisi ut enim ad minim veniam.</p>
+                        Velit esse cillum dolore ullamco laboris nisi ut enim ad minim veniam.</p>
                   </div>
                </div>
             </div>
          </div>
 
          <div class="sidebar">
-            <nav class="side-nav">
-               <a class="side-nav-link" href="#" class="contactLink">Contact Us</a>
-               <a class="side-nav-link" href="#" class="sedLink"> Sed do eiusmod</a>
-               <a class="side-nav-link" href="#" class="cupidLink">Cupidatat </a>
-            </nav>
+      
+               <div class="w3-container w3-center">
+                  <div class="w3-section w3-bottombar w3-padding-16">
+                     <button class="w3-button w3-black"><a href="#">Contact Us</a></button>
+                     <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i><a href="#"></a>Sed
+                        do eiusmod</a></button>
+                     <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i><a
+                           href="#"></a>Cupidatat</a></button>
+                  </div>
+              
+            </div>
 
             <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur. Velit esse
                cillum dolore ullamco laboris nisi ut enim ad minim veniam.</p>
@@ -166,9 +175,10 @@
                <a class="footer-nav-link" href="about/index.html" class="aboutLink">about us</a>
             </nav>
 
-            <div class="footerMain">
-               <p><strong>Copyright 2010, The Design List</strong></p>
-               <p>All rights, including photographic, polygraphic, and mineral are reserved. Sed do eiusmod tempor
+            <div class="w3-center">
+               <p class="w3-padding-32"><strong class="copyright">Copyright 2010, The Design List</strong></p>
+               <p class="w3-small">All rights, including photographic, polygraphic, and mineral are reserved. Sed do
+                  eiusmod tempor
                   incididunt
                   eu fugiat nulla pariatur. Duis aute irure dolor mollit anim id est laborum. Sed do eiusmod tempor
                   incididunt

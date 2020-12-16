@@ -1,6 +1,6 @@
 :root {
    --main-radius: 5px;
-   --main-padding: 5px;
+   --main-padding: 20px;
    --main-margin: 0.2rem;
 }
 
@@ -8,7 +8,7 @@
    display: grid;
    height: 100vh;
    grid-template-columns: 1fr 1fr 0.7fr 50px;
-   grid-template-rows: 138px 290px auto auto;
+   grid-template-rows: 138px auto auto auto;
    grid-template-areas:
       "header header header navbar"
       "about about sidebar sidebar"
@@ -20,11 +20,13 @@
 .header {
    grid-area: header;
    border-bottom-left-radius: var(--main-radius);
+   margin-bottom: var(--main-margin);
 }
 
 .navbar {
    grid-area: navbar;
    border-bottom-right-radius: var(--main-radius);
+   margin-bottom: var(--main-margin);
 }
 
 .about {
