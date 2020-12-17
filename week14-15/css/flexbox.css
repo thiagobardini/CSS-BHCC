@@ -4,21 +4,26 @@
    justify-content: space-between;
 }
 
-#header-nav {
-   display: flex;
-}
-
 .header-flex {
    display: flex;
    align-items: flex-end;
 }
 
-.about-nav {
+#header-nav {
+   display: flex;
+}
+
+.related-nav {
    display: flex;
    justify-content: center;
 }
 
-/* footer */
+.aiga {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
 .footerWrapper .container {
    flex-direction: column;
    align-items: center;
@@ -31,9 +36,9 @@
 }
 
 @media only screen and (max-width: 900px) {
-.about-nav {
-   display: contents;
-   justify-content: center;
-}
+   .related-nav {
+      display: contents;
+      justify-content: center;
+   }
 
 }

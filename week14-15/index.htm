@@ -9,12 +9,9 @@
    <link rel="stylesheet" href="css/flexbox.css">
    <link rel="stylesheet" href="css/grid.css">
    <link rel="stylesheet" href="css/reset.css">
-   <link rel="stylesheet" media="print" href="print.css" />
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-   <!-- Bootstrap CSS -->
-   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
-
+   <!-- <link rel="stylesheet" media="print"/> -->
    <script src="https://kit.fontawesome.com/2fee02c954.js" crossorigin="anonymous"></script>
 </head>
 <style>
@@ -23,6 +20,10 @@
    }
 
    h2 {
+      font-size: 1.7em;
+   }
+
+   h3 {
       font-size: 1.5em;
    }
 
@@ -30,20 +31,65 @@
       color: #fff;
    }
 
-   @media only screen and (max-width: 769px) {
-      h1 {
-         font-size: 1.4em;
-         font-weight: bold;
+   @media print {
+
+      @page {
+         margin: 1cm;
       }
 
-      h2 {
-         font-size: 1.2em;
-         font-weight: bold;
+      .navbar,
+      #header-nav-hidder,
+      .related,
+      .video,
+      .footer-nav,
+      .img-content,
+      .sidebar-nav,
+      .footerTxt {
+         display: none !important;
       }
 
-      h3 {
-         font-size: 1.1em;
-         font-weight: bold;
+      body {
+         line-height: 1.1;
+         font-size: 12pt;
+         font-family: sans-serif;
+      }
+
+      .container {
+         display: grid !important;
+         height: auto;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: minmax(138px, auto);
+         ;
+         grid-template-areas:
+            "header header"
+            "about about"
+            "content1 content2"
+            "sidebar sidebar"
+            "footer footer";
+      }
+
+      .about {
+         border-radius: 5px;
+         border: 2px solid #CCC;
+      }
+
+      .aboutTxt {
+         position: unset;
+         color: #000;
+      }
+
+      .aboutTxt h2 {
+         color: #000;
+         text-shadow: none;
+      }
+
+      .aboutTxt p {
+         color: #000;
+         text-shadow: none;
+      }
+
+      .copyright {
+         padding: 5px !important;
       }
    }
 </style>
@@ -62,19 +108,8 @@
                class="fab fa-angellist"></i>&nbsp;about us</a>
          <a href="spring.htm" class="w3-bar-item w3-button w3-text-black w3-hover-black"><i
                class="fas fa-book-reader"></i>&nbsp;newsletters</a>
-
-               <div class="w3-dropdown-hover w3-tag w3-center w3-margin-top-16">
-                  <button class="w3-button w3-center w3-black w3-large">Related Sites</button>
-                  <div class="w3-dropdown-content w3-bar-block">
-                    <a href="#" class="w3-bar-item w3-large w3-button">Print Magazingray</a>
-                    <a href="#" class="w3-bar-item w3-large w3-button">Communication Art</a>
-                    <a href="#" class="w3-bar-item w3-large w3-button">AIGA</a>
-                    <a href="#" class="w3-bar-item w3-large w3-button">Sawyer McFarland Media</a>
-                  </div>
-                </div>
-         
          <a href="https://github.com/thiagobardini/css-bhcc"
-            class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-24"><i
+            class="w3-bar-item w3-button w3-text-pink w3-hover-black w3-padding-24"><i
                class="fab fa-github"></i>&nbsp;thiagobardini</a>
       </div>
    </nav>
@@ -87,54 +122,51 @@
                      class="fa fa-bars"></i></span>
             </div>
          </div>
-
+         <!-- HEADER -->
          <header class="header">
-            <div class="header-banner">
-               <div class="header-flex">
-                  <a href="index.htm"><img src="image/tbardini.png" class="logo"></a>
-                  <a class="title" href="index.htm">
-                     <h1>The Design List</h1>
-                  </a>
-               </div>
+            <div class="header-flex">
+               <a class="logoFace" href="index.htm"><img src="image/tbardini.png"></a>
+               <a class="title" href="index.htm">
+                  <h1>The Design List</h1>
+               </a>
             </div>
-
             <div id="header-nav-hidder">
                <nav id="header-nav">
-                  <a class="header-nav-link" href="index.htm">home</a>
-                  <a class="header-nav-link header-nav-link-black" href="#">about us</a>
-                  <a class="header-nav-link" href="#">newsletters</a>
+                  <a class="nav-link" href="index.htm">home</a>
+                  <a class="nav-link" href="#">about us</a>
+                  <a class="nav-link" href="#">newsletters</a>
                </nav>
             </div>
          </header>
-
+         <!-- ABOUT -->
          <main class="about">
-
-
-               <video class="video" poster="./image/imgVideo.png" autoplay="autoplay" muted="muted" loop="loop">
-                  <source src="./video/thedesignVideo.mp4" type="video/mp4">
-               </video>
-               <div class="aboutTxt">
-                  <h1>About The Design List</h1>
-                  <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur. Velit
-                     esse
-                     cillum
-                     dolore ullamco laboris nisi ut enim ad minim veniam.</p>
-                  <p>Ut aliquip ex ea commodo consequat. Cupidatat non proident, sunt in culpa sed do eiusmod tempor
-                     incididunt.
-                     Excepteur sint occaecat mollit anim id est laborum. Ut labore et dolore magna aliqua. Quis nostrud
-                     exercitation
-                     velit esse cillum dolore ut enim ad minim veniam.</p>
+            <video class="video" poster="./image/imgVideo.png" autoplay="autoplay" muted="muted" loop="loop">
+               <source src="./video/thedesignVideo.mp4" type="video/mp4">
+            </video>
+            <div class="aboutTxt">
+               <h2>About The Design List</h2>
+               <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur. Velit
+                  esse
+                  cillum
+                  dolore ullamco laboris nisi ut enim ad minim veniam.</p>
+               <p>Ut aliquip ex ea commodo consequat. Cupidatat non proident, sunt in culpa sed do eiusmod tempor
+                  incididunt.
+                  Excepteur sint occaecat mollit anim id est laborum. Ut labore et dolore magna aliqua. Quis nostrud
+                  exercitation
+                  velit esse cillum dolore ut enim ad minim veniam.</p>
             </div>
          </main>
-         <div class="related" class="w3-section w3-padding-16"> 
-            <h3 >Related Sites</h3>            
-             <nav class="about-nav w3-center">
-               <a class="w3-button w3-margin w3-white w3-text-black w3-hover-black" href="http://www.printmag.com/">Print <br> Magazingray</a>
-               <a class="w3-button w3-margin w3-white w3-text-black w3-hover-black" href="http://www.commarts.com/">Communication <br> Art</a>
-               <a class="w3-button w3-margin w3-white w3-text-black w3-hover-black" href="http://www.aiga.org/">AIGA</a>
-               <a class="w3-button w3-margin w3-white w3-text-black w3-hover-black" href="http://www.sawmac.com/">Sawyer <br>McFarland Media</a>
+         <!-- RELATED -->
+         <div class="related" class="w3-padding-16">
+            <h3 class="w3-center relatedTxt">Related Sites</h3>
+            <nav class="related-nav w3-center">
+               <a class="related-nav-link w3-light-gray" href="http://www.printmag.com/">Print Magazingray</a>
+               <a class="related-nav-link w3-light-gray" href="http://www.commarts.com/">Communication Art</a>
+               <a class="related-nav-link w3-light-gray aiga" href="http://www.aiga.org/">AIGA</a>
+               <a class="related-nav-link w3-light-gray" href="http://www.sawmac.com/">Sawyer McFarland Media</a>
             </nav>
-            </div>
+         </div>
+         <!-- CONTENT1 -->
          <div class="content1">
             <h2>Not Just Another Discussion</h2>
             <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur. Velit
@@ -145,34 +177,31 @@
                Excepteur sint occaecat mollit anim id est laborum. Ut labore et dolore magna aliqua. Quis nostrud
                exercitation velit esse cillum dolore ut enim ad minim veniam.</p>
          </div>
-
+         <!-- CONTENT2 -->
          <div class="content2">
-
             <div class="w3-row-padding">
                <div class="w3-first  w3-margin-bottom">
-                  <img src="./image/planet.png" alt="Norway" style="width:100%" class="w3-hover-opacity w3-round">
+                  <h2>Could it Actually Be From Another Planet?</h2>
+                  <img src="./image/planet.png" alt="Norway" style="width:100%" class="w3-round img-content">
                   <div class="w3-white">
-                     <h2>Could it Actually Be From Another Planet?</h2>
                      <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur.
                         Velit esse cillum dolore ullamco laboris nisi ut enim ad minim veniam.</p>
                   </div>
                </div>
             </div>
          </div>
-
+         <!-- SIDEBAR -->
          <div class="sidebar">
-
             <div class="w3-container w3-center">
-               <div class="w3-section w3-bottombar w3-padding-16">
-                  <button class="w3-button w3-black"><a href="#">Contact Us</a></button>
+               <div class="sidebar-nav w3-section w3-bottombar w3-padding-16">
+                  <button class="w3-button w3-black"><a href="#"><i
+                           class="fa fa-address-card w3-margin-right"></i>Contact Us</a></button>
                   <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i><a href="#"></a>Sed
                      do eiusmod</a></button>
-                  <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i><a
+                  <button class="w3-button w3-white"><i class="fa fa-photo w3-margin-right"></i><a
                         href="#"></a>Cupidatat</a></button>
                </div>
-
             </div>
-
             <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt eu fugiat nulla pariatur. Velit esse
                cillum dolore ullamco laboris nisi ut enim ad minim veniam.</p>
             <p>Ut aliquip ex ea commodo consequat. Cupidatat non proident, sunt in culpa sed do eiusmod tempor
@@ -186,18 +215,17 @@
                Excepteur sint occaecat mollit anim id est laborum. Ut labore et dolore magna aliqua. Quis nostrud
                exercitation velit esse cillum dolore ut enim ad minim veniam.</p>
          </div>
-
+         <!-- FOOTER -->
          <footer class="footer">
-
             <nav class="footer-nav">
                <a class="footer-nav-link" href="index.html" class="homeLink">home</a>
                <a class="footer-nav-link" href="forums/index.html" class="newsLink">newsletters</a>
                <a class="footer-nav-link" href="about/index.html" class="aboutLink">about us</a>
             </nav>
-
             <div class="w3-center">
-               <p class="w3-padding-32"><strong class="copyright">Copyright 2010, The Design List</strong></p>
-               <p class="w3-small">All rights, including photographic, polygraphic, and mineral are reserved. Sed do
+               <p class="w3-padding-32 copyright"><strong>Copyright 2010, The Design List</strong></p>
+               <p class="w3-small footerTxt">All rights, including photographic, polygraphic, and mineral are reserved.
+                  Sed do
                   eiusmod tempor
                   incididunt
                   eu fugiat nulla pariatur. Duis aute irure dolor mollit anim id est laborum. Sed do eiusmod tempor

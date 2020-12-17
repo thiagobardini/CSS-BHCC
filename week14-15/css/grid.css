@@ -8,8 +8,7 @@
    display: grid;
    height: 100vh;
    grid-template-columns: 1fr 1fr 0.7fr 50px;
-   /* grid-template-rows: 138px auto auto auto; */
-   grid-template-rows: minmax(138px,auto);
+   grid-template-rows: minmax(138px, auto);
    grid-template-areas:
       "header header header navbar"
       "about about sidebar sidebar"
@@ -33,8 +32,6 @@
 
 .about {
    grid-area: about;
-   /* border-radius: var(--main-radius); */
-   /* padding: var(--main-padding); */
    margin: var(--main-margin);
 }
 
@@ -78,15 +75,14 @@
       display: grid;
       height: 100vh;
       grid-template-columns: 0.9fr 0.2fr;
-      /* grid-template-rows: 138px 455px 400px 255px 255px 255px; */
       grid-template-rows: auto;
       grid-template-areas:
          "header navbar"
          "about about"
+         "related related"
          "sidebar sidebar"
          "content1 content1"
          "content2 content2"
          "footer footer";
-      /* grid-gap: 0.2rem; */
    }
 }

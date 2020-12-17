@@ -64,3 +64,19 @@
 <br>
 
 ![](https://i.imgur.com/qDpMK6H.png)
+
+## WEEK 14-15: Final Project (Version: Desktop, Mobile and Printer-friendly)
+- [Click here to see the website](https://loving-blackwell-ce1b73.netlify.app/)
+<br>
+<br>
+<p style="text-align:center">Desktop Version </p>
+
+![](https://i.imgur.com/3ccAFjE.png)
+
+<p style="text-align:center">Mobile Version </p>
+
+![](https://i.imgur.com/xIwDUm1.png)
+
+<p style="text-align:center">Printer-friendly</p>
+
+![](https://i.imgur.com/U9RyLnB.png)
