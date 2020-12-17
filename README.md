@@ -69,6 +69,10 @@
 - [Click here to see the website](https://loving-blackwell-ce1b73.netlify.app/)
 <br>
 <br>
+
+![](https://github.com/thiagobardini/CSS-BHCC/blob/master/week14-15/video/theDesignGif.gif)
+
+<!-- 
 <p style="text-align:center">Desktop Version </p>
 
 ![](https://i.imgur.com/3ccAFjE.png)
@@ -79,4 +83,4 @@
 
 <p style="text-align:center">Printer-friendly</p>
 
-![](https://i.imgur.com/U9RyLnB.png)
+![](https://i.imgur.com/U9RyLnB.png) -->
