@@ -1,5 +1,5 @@
 body {
-   background-color: #9799A6;
+   /* background-color: #9799A6; */
    font-family: 'Open Sans', Arial, sans-serif;
 }
 
@@ -54,23 +54,51 @@ body {
 
 
 
+
 .about {
-   /* background-color: #6c586c; */
-   background-color: #F1F1F1;
+   background-color: #fc5185;
+   position: relative;
+   z-index: -1;
 }
 
-.about-nav {
-   /* width: auto; */
+.video {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   overflow: hidden;
+   position: relative;
+   border-radius: 5px;
+   z-index: 1;
+   margin-bottom: -5px;
 }
 
-.about-nav-link {
-
+.aboutTxt {
+   position: absolute;
+   top: 0;
+   z-index: 99;
+   padding: 20px;
 }
 
-.about-nav-link:hover {
-   /* color: #FFF;
-   background-color: #9799A6; */
+.aboutTxt h1 {
+   font-size: 2em;
+   color: #ffffff;
+   text-shadow: 2px 2px 2px #000000;
 }
+
+.aboutTxt p {
+   /* font-size: 2em; */
+   color: #ffffff;
+   text-shadow: 2px 2px 2px #000000;
+}
+
+.aboutTxt h3 {
+   font-size: 1.2em;
+   color: #000000;
+   text-shadow: 1px 1px 1px #000;
+   text-align: center;
+}
+
+
 
 .content1 {
    background-color: #fff;
@@ -94,19 +122,19 @@ body {
 }
 
 .footer-nav-link {
-	padding: 10px;
-	margin-bottom: 10px;
-	color: #9799A6;
-	text-decoration: none;
-	transition: .5s;
-	display: block;
-	border-bottom: 1px solid #fff;
+   padding: 10px;
+   margin-bottom: 10px;
+   color: #9799A6;
+   text-decoration: none;
+   transition: .5s;
+   display: block;
+   border-bottom: 1px solid #fff;
 }
 
 .footer-nav-link:hover {
    color: #000;
    background-color: #FFF;
-} 
+}
 
 .copyright {
    color: #fff;
@@ -131,21 +159,34 @@ body {
    }
 
    .header-banner {
-		margin: 0;
-	}
+      margin: 0;
+   }
 
-	.header-nav {
-		width: auto;
-	}
+   .header-nav {
+      width: auto;
+   }
+
+   .aboutTxt {
+      position: relative;
+      top: 0;
+      z-index: 99;
+      text-shadow: 2px 2px 2px #000000;
+      color: white;
+      padding: 20px;
+   }
+
+   .relatedSitesBlock {
+      display: none;
+   }
 }
 
 @media(min-width: 814px) {
    .header-nav-link {
-		border: 1px solid #9799A6;
-	}
+      border: 1px solid #9799A6;
+   }
 
-	.header-nav-link:hover {
-		color: #FFF;
+   .header-nav-link:hover {
+      color: #FFF;
       background-color: #000;
    }
 
@@ -154,14 +195,14 @@ body {
       background-color: #fff;
    }
 
-   
+
    .header-nav {
       width: auto;
-	}
-
-	.header-nav-link {
-		width: auto;
-		margin: 0 0 18px 10px;
    }
-   
+
+   .header-nav-link {
+      width: auto;
+      margin: 0 0 18px 10px;
+   }
+
 }
