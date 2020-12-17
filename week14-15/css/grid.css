@@ -13,6 +13,7 @@
    grid-template-areas:
       "header header header navbar"
       "about about sidebar sidebar"
+      "related related sidebar sidebar"
       "content1 content2 sidebar sidebar"
       "footer footer footer footer";
    /* grid-gap: 0.2rem; */
@@ -32,8 +33,15 @@
 
 .about {
    grid-area: about;
-   border-radius: var(--main-radius);
+   /* border-radius: var(--main-radius); */
    /* padding: var(--main-padding); */
+   margin: var(--main-margin);
+}
+
+.related {
+   grid-area: related;
+   border-radius: var(--main-radius);
+   padding: var(--main-padding);
    margin: var(--main-margin);
 }
 

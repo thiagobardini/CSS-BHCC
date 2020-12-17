@@ -52,11 +52,8 @@ body {
    border-bottom: 1px solid #323232;
 }
 
-
-
-
 .about {
-   background-color: #fc5185;
+   /* background-color: #fc5185; */
    position: relative;
    z-index: -1;
 }
@@ -79,6 +76,7 @@ body {
    padding: 20px;
 }
 
+
 .aboutTxt h1 {
    font-size: 2em;
    color: #ffffff;
@@ -93,12 +91,10 @@ body {
 
 .aboutTxt h3 {
    font-size: 1.2em;
-   color: #000000;
+   color: #CCC;
    text-shadow: 1px 1px 1px #000;
    text-align: center;
 }
-
-
 
 .content1 {
    background-color: #fff;
@@ -166,16 +162,26 @@ body {
       width: auto;
    }
 
+   .video {
+      border-radius: none;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+   }   
+
    .aboutTxt {
       position: relative;
       top: 0;
       z-index: 99;
       text-shadow: 2px 2px 2px #000000;
       color: white;
-      padding: 20px;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
    }
 
-   .relatedSitesBlock {
+   .related {
       display: none;
    }
 }
